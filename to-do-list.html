@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>To do</title>
+  </head>
+  <script src="js/jquery-1.11.3.js" charset="utf-8"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="text-center page-header">New Task</h3>
+          <form id="new-task">
+            <div class="form-group">
+              <label for="description">Description </label>
+              <input type="text" id="description" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="radio-inline">
+                <input type="radio" name="urgency" id="not-urgent" value="not-urgent"> Not urgent
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="urgency" id="sorta-urgent" value="sorta-urgent"> Urgent
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="urgency" id="very-urgent" value="very-urgent"> Very Urgent
+              </label>
+            </div>
+            <button type="submit" class="btn btn-success">Add task</button>
+          </form>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <h3 class="page-header">To Do List</h3>
+          <ul id="uncompleted-tasks" class="list-unstyled">
+
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h3 class="page-header">Completed tasks</h3>
+          <ul id="completed-tasks" class="list-unstyled">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

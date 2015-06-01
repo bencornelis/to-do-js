@@ -1,0 +1,33 @@
+.icon {
+  width:20px;
+  position:absolute;
+  top:3px;
+  display: none;
+}
+
+.delete-icon {
+  left: -25px;
+}
+
+.checkmark {
+  left: -45px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.icon:nth-child(2) {
+  margin-right: 15px;
+}
+
+.uncompleted-task {
+  position: relative;
+  left: -45px;
+  text-indent: 45px;
+}
+
+.uncompleted-task:hover .icon {
+  display: inline;
+}
