@@ -31,3 +31,11 @@
 .uncompleted-task:hover .icon {
   display: inline;
 }
+
+#sort:hover {
+  cursor:pointer;
+}
+
+#sort {
+  margin-left: 50px;
+}

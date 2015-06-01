@@ -19,7 +19,7 @@
             </div>
             <div class="form-group">
               <label class="radio-inline">
-                <input type="radio" name="urgency" id="not-urgent" value="not-urgent"> Not urgent
+                <input type="radio" name="urgency" id="not-urgent" value="not-urgent" checked> Not urgent
               </label>
               <label class="radio-inline">
                 <input type="radio" name="urgency" id="sorta-urgent" value="sorta-urgent"> Urgent
@@ -32,7 +32,7 @@
           </form>
         </div>
         <div class="col-md-3 col-md-offset-1">
-          <h3 class="page-header">To Do List</h3>
+          <h3 class="page-header">To Do List <span id="sort" class="text-danger glyphicon glyphicon-sort"></span></h3>
           <ul id="uncompleted-tasks" class="list-unstyled">
 
           </ul>
@@ -49,3 +49,4 @@
 
   </body>
 </html>
+<!-- <span class='icon delete-icon text-danger glyphicon glyphicon-remove'></span> -->
