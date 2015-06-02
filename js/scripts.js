@@ -66,9 +66,8 @@ var appendTask = function(task) {
     $("#completed-tasks").append("<li class='text-success'>" + task.description + "</li>");
   });
 
-  $(".delete-icon").click(function() {
+  $(".delete-icon").last().click(function() {
     $(this).parent().remove();
-
     removeTask(task);
   });
 }
